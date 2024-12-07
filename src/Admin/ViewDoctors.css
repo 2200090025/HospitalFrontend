@@ -1,0 +1,49 @@
+.view-patients {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh; /* Full viewport height */
+    padding: 20px;
+    width: 100%;
+}
+
+.view-appointments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.appointments-table {
+    width: 80%; /* Adjust width of table */
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.appointments-table th,
+.appointments-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.appointments-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.appointments-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.appointments-table tr:hover {
+    background-color: #ddd;
+}
+
+.appointments-table td {
+    font-size: 14px;
+}
