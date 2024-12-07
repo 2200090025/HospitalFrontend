@@ -9,7 +9,7 @@ export default function ViewDoctors() {
   useEffect(() => {
     const fetchDoctors = async () => {
       try {
-        const response = await axios.get('http://localhost:2220/viewalldoctors');
+        const response = await axios.get('https://hospital.up.railway.app/viewalldoctors');
         setDoctors(response.data);
       } catch (error) {
         console.error("Error fetching doctors:", error.message);
@@ -21,7 +21,7 @@ export default function ViewDoctors() {
 
   const handleStatus = async (doctorId, status) => {
     try {
-      const response = await axios.put(`http://localhost:2220/doctorstatus`, null, {
+      const response = await axios.put(`https://hospital.up.railway.app/doctorstatus`, null, {
         params: {
           id: doctorId,
           status: status,

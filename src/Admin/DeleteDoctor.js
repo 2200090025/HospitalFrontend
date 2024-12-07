@@ -10,7 +10,7 @@ export default function DeleteDoctors({ docId }) {
   useEffect(() => {
     const fetchDoctor = async () => {
       try {
-        const response = await axios.get(`http://localhost:2220/viewalldoctors`);
+        const response = await axios.get(`https://hospital.up.railway.app/viewalldoctors`);
         setDoctors(response.data);
       } catch (error) {
         console.error(error.message);

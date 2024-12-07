@@ -25,7 +25,7 @@ export default function Adminlogin({onAdminLogin}) {
     try 
     { console.log(data.username)
       console.log(data.password)
-      const response = await axios.post('http://localhost:2220/adminlogin', data , {
+      const response = await axios.post('https://hospital.up.railway.app/adminlogin', data , {
         
       });
       console.log(response.data)

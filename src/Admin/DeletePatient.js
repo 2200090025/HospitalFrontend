@@ -9,7 +9,7 @@ export default function DeletePatient({ docId }) {
   useEffect(() => {
     const fetchPatients = async () => {
       try {
-        const response = await axios.get(`http://localhost:2220/viewallpatients`);
+        const response = await axios.get(`https://hospital.up.railway.app/viewallpatients`);
         setPatients(response.data);
       } catch (error) {
         console.error(error.message);

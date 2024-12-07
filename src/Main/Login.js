@@ -24,7 +24,7 @@ export default function Login({onPatientLogin}) {
     e.preventDefault();
     try 
     {
-      const response = await axios.post('http://localhost:2220/patientlogin', data , {
+      const response = await axios.post('https://hospital.up.railway.app/patientlogin', data , {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'// to convert json data into form data
         }

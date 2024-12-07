@@ -52,7 +52,7 @@ export default function SignUp() {
     }
 
     try {
-      const response = await axios.post('http://localhost:2220/patientreg', formData, {
+      const response = await axios.post('https://hospital.up.railway.app/patientreg', formData, {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded' // Convert JSON data into form data
         }
